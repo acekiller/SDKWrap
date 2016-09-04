@@ -7,6 +7,7 @@
 //
 
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "NSError+Wrap.h"
 
 @interface LAContext (Wrap)
 

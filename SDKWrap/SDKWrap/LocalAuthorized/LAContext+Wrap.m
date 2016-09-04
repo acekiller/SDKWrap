@@ -51,7 +51,33 @@
 }
 
 - (NSError *) erroMapping:(NSError *)error {
-    return error;
+    NSString *errorDomain = error.domain;
+    NSInteger code = error.code;
+    NSMutableDictionary *userInfo = [[error userInfo] mutableCopy];
+    
+    NSString *errorDescription = [self errorDescriptionWithKLACode:code];
+    if (errorDescription == nil) {
+        errorDescription = [userInfo objectForKey:NSLocalizedDescriptionKey];
+    }
+    return [NSError errorWithDomain:errorDomain
+                               code:code
+                           userInfo:userInfo];
+}
+
+- (NSString *) errorDescriptionWithKLACode:(NSInteger)code
+{
+    return [@{
+              @(kLAErrorAuthenticationFailed) : NSLocalizedString(@"验证失败", @"验证失败"),
+              @(kLAErrorUserCancel) : NSLocalizedString(@"您已取消", @"您已取消"),
+              @(kLAErrorUserFallback) : NSLocalizedString(@"用户回退", @"用户回退"),
+              @(kLAErrorSystemCancel) : NSLocalizedString(@"系统取消", @"系统取消"),
+              @(kLAErrorPasscodeNotSet) : NSLocalizedString(@"您的设备还未设置密码!", @"您的设备还未设置密码!"),
+              @(kLAErrorTouchIDNotAvailable) : NSLocalizedString(@"您设备不支持TouchID", @"您设备不支持TouchID"),
+              @(kLAErrorTouchIDNotEnrolled) : NSLocalizedString(@"未设置TouchID", @"未设置TouchID"),
+              @(kLAErrorTouchIDLockout) : NSLocalizedString(@"TouchID已锁定", @"TouchID已锁定"),
+              @(kLAErrorAppCancel) : NSLocalizedString(@"应用取消", @"应用取消"),
+              @(kLAErrorInvalidContext) : NSLocalizedString(@"非法验证", @"非法验证"),
+              } objectForKey:@(code)];
 }
 
 @end

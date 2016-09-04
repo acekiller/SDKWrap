@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1841E6A61D7928CF008D6B88 /* CMMotionManager+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841E6A51D7928CF008D6B88 /* CMMotionManager+Wrap.m */; };
+		1841E6A81D79319E008D6B88 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1841E6A71D79319E008D6B88 /* CoreLocation.framework */; };
+		1841E6AC1D79453D008D6B88 /* NSError+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841E6AB1D79453D008D6B88 /* NSError+Wrap.m */; };
 		186E35FE1D77C4F3002528CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E35FD1D77C4F3002528CE /* main.m */; };
 		186E36011D77C4F3002528CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E36001D77C4F3002528CE /* AppDelegate.m */; };
 		186E36041D77C4F3002528CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E36031D77C4F3002528CE /* ViewController.m */; };
@@ -18,6 +21,10 @@
 		186E36321D77C56E002528CE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186E36311D77C56E002528CE /* LocalAuthentication.framework */; };
 		186E36351D77C592002528CE /* LAContext+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E36341D77C592002528CE /* LAContext+Wrap.m */; };
 		186E36371D77F235002528CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 186E36361D77F235002528CE /* README.md */; };
+		186E36821D783A79002528CE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186E36811D783A79002528CE /* CoreMotion.framework */; };
+		186E36841D783A82002528CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186E36831D783A82002528CE /* MapKit.framework */; };
+		186E36871D784384002528CE /* MKMapView+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E36861D784384002528CE /* MKMapView+Wrap.m */; };
+		186E368A1D7843A4002528CE /* CLLocationManager+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E36891D7843A4002528CE /* CLLocationManager+Wrap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1841E6A41D7928CF008D6B88 /* CMMotionManager+Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionManager+Wrap.h"; sourceTree = "<group>"; };
+		1841E6A51D7928CF008D6B88 /* CMMotionManager+Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionManager+Wrap.m"; sourceTree = "<group>"; };
+		1841E6A71D79319E008D6B88 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1841E6AA1D79453D008D6B88 /* NSError+Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Wrap.h"; sourceTree = "<group>"; };
+		1841E6AB1D79453D008D6B88 /* NSError+Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Wrap.m"; sourceTree = "<group>"; };
 		186E35F91D77C4F3002528CE /* SDKWrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKWrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186E35FD1D77C4F3002528CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186E35FF1D77C4F3002528CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +70,12 @@
 		186E36331D77C592002528CE /* LAContext+Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LAContext+Wrap.h"; sourceTree = "<group>"; };
 		186E36341D77C592002528CE /* LAContext+Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LAContext+Wrap.m"; sourceTree = "<group>"; };
 		186E36361D77F235002528CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		186E36811D783A79002528CE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		186E36831D783A82002528CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		186E36851D784384002528CE /* MKMapView+Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Wrap.h"; sourceTree = "<group>"; };
+		186E36861D784384002528CE /* MKMapView+Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Wrap.m"; sourceTree = "<group>"; };
+		186E36881D7843A4002528CE /* CLLocationManager+Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Wrap.h"; sourceTree = "<group>"; };
+		186E36891D7843A4002528CE /* CLLocationManager+Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Wrap.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1841E6A81D79319E008D6B88 /* CoreLocation.framework in Frameworks */,
+				186E36841D783A82002528CE /* MapKit.framework in Frameworks */,
+				186E36821D783A79002528CE /* CoreMotion.framework in Frameworks */,
 				186E36321D77C56E002528CE /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,9 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1841E6A91D79452E008D6B88 /* WrapCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1841E6AA1D79453D008D6B88 /* NSError+Wrap.h */,
+				1841E6AB1D79453D008D6B88 /* NSError+Wrap.m */,
+			);
+			path = WrapCommon;
+			sourceTree = "<group>";
+		};
 		186E35F01D77C4F3002528CE = {
 			isa = PBXGroup;
 			children = (
+				1841E6A71D79319E008D6B88 /* CoreLocation.framework */,
+				186E36831D783A82002528CE /* MapKit.framework */,
+				186E36811D783A79002528CE /* CoreMotion.framework */,
 				186E36361D77F235002528CE /* README.md */,
 				186E36311D77C56E002528CE /* LocalAuthentication.framework */,
 				186E35FB1D77C4F3002528CE /* SDKWrap */,
@@ -154,6 +187,8 @@
 		186E362F1D77C549002528CE /* SDKWrap */ = {
 			isa = PBXGroup;
 			children = (
+				1841E6A91D79452E008D6B88 /* WrapCommon */,
+				186E367B1D7838EE002528CE /* GyroHere */,
 				186E36301D77C549002528CE /* LocalAuthorized */,
 			);
 			path = SDKWrap;
@@ -166,6 +201,19 @@
 				186E36341D77C592002528CE /* LAContext+Wrap.m */,
 			);
 			path = LocalAuthorized;
+			sourceTree = "<group>";
+		};
+		186E367B1D7838EE002528CE /* GyroHere */ = {
+			isa = PBXGroup;
+			children = (
+				186E36851D784384002528CE /* MKMapView+Wrap.h */,
+				186E36861D784384002528CE /* MKMapView+Wrap.m */,
+				186E36881D7843A4002528CE /* CLLocationManager+Wrap.h */,
+				186E36891D7843A4002528CE /* CLLocationManager+Wrap.m */,
+				1841E6A41D7928CF008D6B88 /* CMMotionManager+Wrap.h */,
+				1841E6A51D7928CF008D6B88 /* CMMotionManager+Wrap.m */,
+			);
+			path = GyroHere;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +348,13 @@
 			files = (
 				186E36041D77C4F3002528CE /* ViewController.m in Sources */,
 				186E36011D77C4F3002528CE /* AppDelegate.m in Sources */,
+				186E368A1D7843A4002528CE /* CLLocationManager+Wrap.m in Sources */,
+				1841E6A61D7928CF008D6B88 /* CMMotionManager+Wrap.m in Sources */,
 				186E36371D77F235002528CE /* README.md in Sources */,
 				186E36351D77C592002528CE /* LAContext+Wrap.m in Sources */,
 				186E35FE1D77C4F3002528CE /* main.m in Sources */,
+				186E36871D784384002528CE /* MKMapView+Wrap.m in Sources */,
+				1841E6AC1D79453D008D6B88 /* NSError+Wrap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -430,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -443,8 +495,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SDKWrap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.SDKWrap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainbo.homeschoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -455,8 +508,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SDKWrap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.SDKWrap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainbo.homeschoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
